@@ -1,0 +1,65 @@
+html {
+	height: 100%;
+}
+
+body {
+    background-image: url("../images/background.jpg");	
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding:20px;
+}
+
+.navbar, #navigation{
+	background-image: url("../images/red_strip.png");
+}
+
+#myNavbar > ul.nav.navbar-nav > li {
+	width:auto;
+}
+
+
+#myNavbar > ul.nav.navbar-nav > li > a {
+	color:white;
+	
+}
+
+.divider-vertical{
+	height:10px;
+	border-left:1px solid white;
+}
+
+
+@media (min-width: 768px){
+  .navbar-nav{
+     margin: 0 auto;
+     display: table;
+     table-layout: fixed;
+     width: 100%;
+  }
+
+  .navbar-nav > li{
+     display: table-cell;
+     float: none;
+     text-align: center;
+     
+     
+  }
+}  
+
+
+.footer{
+	
+	flex-shrink: 0;
+	padding:6px;
+	text-align:center;
+	color:white;
+}
+
+footer{
+	background-image: url("../images/red_strip.png");
+}
